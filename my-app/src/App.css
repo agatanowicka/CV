@@ -1,12 +1,13 @@
 
 
 .header{
-    background-color: white;
+    background-image: linear-gradient(to left, #00a8cc, #000839, black);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .navTextItem{
     font-weight: bold;
-    color:#000839;
+    color:white;
 }
 .navTextFrontEnd{
     color:#ffa41b;
@@ -18,47 +19,48 @@
 .rightNav{
     margin-left: 50%;
 }
-.home{
-    margin-top: 100px;
-}
+
 .mainRow{
     width: 80%;
-    margin-left:auto ;
+    margin-left:20% ;
     margin-right: auto;
+    height: auto;
 }
 .homeHeading1{
-    font-size: 5em;
+    padding-top: 150px;
+    font-size: 8em;
     font-weight: bold;
-  color: #000839;
   animation-name: headin1Animation;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 @keyframes headin1Animation {
-    0% {color: #000839;}
+    0% {color: white;}
     50% {color: #ffa41b;}
-    100% {color: #000839;}
+    100% {color: white;}
 }
 .homeHeading5{
-    color:#000839;
-    font-weight: thin;
+    font-size: 2em;
+    color:#ffa41b;
+    font-weight: lighter;
     padding-left: 1%;
 }
 .goToPortfolioBtn{
-    border:none;
-    background-image: linear-gradient(to bottom right, #000839, #005082,#00a8cc);
     margin-left: 30px;
+    border:none;
+    background-image: linear-gradient(to bottom right, #ffa41b,#000839);
     height: 50px;
     width: 200px;
     box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19),0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19);
 }
 .goToPortfolioBtn:hover{
-    background-image: linear-gradient(to bottom right, #ffa41b,#000839);
+    background-image: linear-gradient(to bottom right, #ffa41b, #ffa41b);
 }
 .goToPortfolioHeading{
     display: inline;
-    color:#000839 ;
+    color:white ;
     font-weight: bold;
+    font-size: 2em;
 }
 .goToPortfolioDiv{
     margin-top: 60px;
@@ -69,7 +71,7 @@
     font-weight: bold;
 } 
 .homeImages{
-    margin-top: 80px;
+    margin-top: -160px;
 }
 
 .imageAnimation{
@@ -78,46 +80,82 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
 }
-.homeImgThink1{
+.homeImgMonitor{
+    opacity: 70%;
     position: absolute;
-    left:80%;
+    left:20%;
     animation-name: imageAnimate1;
 }
 @keyframes imageAnimate1 {
-    0%   {  top:-40px;}
-    50%  {  top:-30px;}
-    100% {  top:-40px;}
-}
-.homeImgThink2{
-    position: absolute;
-    left:23%;
-    animation-name: imageAnimate2;
-}
-@keyframes imageAnimate2 {
-    0%   {  top:-25px;}
+    0%   {  top:-20px;}
     50%  {  top:0px;}
-    100% {  top:-25px;}
+    100% {  top:-20px;}
 }
-.homeImgThink3{
+.homeImgLaptop{
     position: absolute;
-    z-index: -1;
-    animation-name: imageAnimate3;
+    left:20%;
+    animation-name: imageAnimateLaptop;
+    z-index: 1;
 }
-@keyframes imageAnimate3 {
-    0%   {  top:-80px;left:50%;}
-    50%  { top:-78px; left:55%;}
-    100% {  top:-80px;left:50%;}
+@keyframes imageAnimateLaptop {
+    0%   {  top:190px;}
+    50%  {  top:240px;}
+    100% {  top:190px;}
+}
+.homeImgMonitor2{
+    opacity:90%;
+    position: absolute;
+    left:50%;
+    animation-name: imageAnimateMonitor2;
+}
+@keyframes imageAnimateMonitor2{
+    0%   {  top:110px;}
+    50%  {  top:60px;}
+    100% {  top:110px;}
+}
+.homeImgMouse{
+    position: absolute;
+    left:75%;
+    animation-name: imageAnimateMouse;
+}
+@keyframes imageAnimateMouse{
+    0%   {  top:400px;}
+    50%  {  top:370px;}
+    100% {  top:400px;}
+}
+
+.homeImgTablet{
+    opacity: 95%;
+    position: absolute;
+    left:7%;
+    animation-name: imageAnimateTablet;
+}
+@keyframes imageAnimateTablet {
+    0%   {  top:120px;}
+    50%  {  top:100px;}
+    100% {  top:120px;}
+}
+.homeImgSmartfon{
+    position: absolute;
+    left:90%;
+    animation-name: imageAnimateSmartfon;
+}
+@keyframes imageAnimateSmartfon {
+    0%   {  top:200px;}
+    50%  { top:220px;}
+    100% {  top:200px;}
 }
 .mainDiv{
-    margin-top:100px;
-    border-top: 1px solid #00508265;
+    padding-top:50px;
+    /* border-top: 1px solid #00508265; */
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+   
 }
 .mainHeading{
     margin-top:50px;
-    color:#005082;
+    color:#00a8cc;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 4em;
@@ -167,12 +205,13 @@
     color:#005082;
 }
 .techParagraph{
-    color: #000839;
+    color: white;
     text-align: center;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    
+    font-weight: normal;
+    font-size: 1.5em;
 }
 .techImages{
     margin-top:50px;
@@ -182,17 +221,18 @@
 }
 .imgSubtitle{
     font-weight: bold;
+    color:#ffa41b;
 }
 .techImg{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 30px;
     height:100px;
-    width:90%;
+    width:60%;
     transition: width 1s, height 3s;
 }
 .techImg:hover {
-    width: 100%;
+    width: 75%;
     height: 110px;
   }
 
@@ -309,22 +349,183 @@
     left: -35%;
     z-index: -1;
 }
-.techVideoTag{
-    width: 70%;
-    height: 200px;
-    position: absolute;
-    top:30px;
-    left: 15%;
-    z-index: -1;
-}
-.myFoto{
-    width: 100%;
-    height: 450px;
-    position: absolute;
-    top:-100px;
-}
+
 .backgroundToHomeImg{
     position: absolute;
     z-index: -1;
     width: 100%;
+}
+  .homeContainerBackground{
+    background: url(/images/backgroud.jpg) no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+          height:auto;
+          position: relative;
+          z-index: 0;
+          background-position:top;
+    margin-top:-23px;
+    padding-bottom: 100px;
+  }
+
+  .homeContainerBackground::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000839 ;
+    opacity: 70%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+  .technoDiv{
+    background: url(/images/techImg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height:auto;
+    padding-bottom:100px;
+    position: relative;
+    z-index: 0;
+    background-position:top;
+margin-top:200px;
+margin-bottom: 30px;
+  }
+  .technoDiv::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000839 ;
+    opacity: 80%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+  .techItem{
+      background-color: white;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border-radius: 50%;
+      margin-top: 10px;
+  }
+  .portfolioDiv{
+    background-image: linear-gradient(to bottom, white,#005082af);
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .homeHeading1{
+        font-size: 3em;
+    }
+    .homeHeading5{
+        font-size: 2em;
+    }
+    .goToPortfolioHeading{
+        font-size: 1em;
+    }
+    .goToPortfolioBtn{
+        width: 50px;
+    }
+    .homeImages{
+        margin-top: 60px;
+        width: 90%;
+    }
+    #aboutMe{
+        height: 1400px;
+    }
+    .mainHeading{
+        font-size: 3em;
+    }
+    .techParagraph{
+        font-size: 1em;
+    }
+    .projectDetailsInfo{
+        font-size: 0.8em;
+    }
+    .projectDetailsTitle{
+        font-size: 2em;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px){
+    .homeHeading1{
+        font-size: 4em;
+    }
+    .homeHeading5{
+        font-size: 2.3em;
+    }
+    .goToPortfolioHeading{
+        font-size: 1.5em;
+    }
+    .goToPortfolioBtn{
+        width: 50px;
+    }
+    .homeImages{
+        margin-top: 60px;
+        width: 70%;
+    }
+    #aboutMe{
+        height: 1300px;
+    }
+    .projectDetailsInfo{
+        font-size: 0.8em;
+    }
+    .projectDetailsTitle{
+        font-size: 1.5em;
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .homeHeading1{
+        font-size: 5.3em;
+    }
+    .homeHeading5{
+        font-size: 2.3em;
+    }
+    .goToPortfolioHeading{
+        font-size: 1.5em;
+    }
+    .goToPortfolioBtn{
+        width: 150px;
+    }
+    .projectDetailsInfo{
+        font-size: 0.8em;
+    }
+    .projectDetailsTitle{
+        font-size: 2em;
+    }
+  }
+  @media screen and (min-width: 1281px) {
+    .content{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+        background-color: white;
+    }
+    .projectDetailsInfo{
+        font-size: 0.8em;
+    }
+    .videoTag{
+        width: 250%;
+        height: 700px;
+        left: -80%;
+        top:-350px
+    }
+  }
+  @media (min-width: 1281px) and (max-width: 1450px) {
+    .homeHeading1{
+        font-size: 6em;
+    }
+    .projectDetailsTitle{
+        font-size: 1.8em;
+    }
+    .projectDetailsInfo{
+        font-size: 0.9em;
+    }
+    .videoTag{
+        width: 200%;
+        height: 600px;
+        left: -40%;
+        top:-280px
+    }
 }

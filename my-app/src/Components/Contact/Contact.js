@@ -7,7 +7,7 @@ import { FaPhone } from 'react-icons/fa';
 
 export default function Contact() {
     return (
-        <div className='mainDiv' id='contact'>
+        <div className='mainDiv content' id='contact'>
             <Container fluid style={{ marginTop: '50px' }} >
                 <Row>
                     <Col><div className='mainLeftBorder'><h1 className="mainHeading">Kontakt.</h1> </div></Col>
