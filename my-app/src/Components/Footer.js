@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function getCurrentDate() {
-
     let newDate = new Date()
     let year = newDate.getFullYear();
     return year
@@ -12,12 +11,12 @@ function getCurrentDate() {
 
 export default function Footer() {
     return (
-         <Container fluid className='footerContainer'>
+        <Container fluid className='footerContainer'>
             <Row>
-              <Col>
+                <Col>
                     <h5 className='footerHeading'>{getCurrentDate()} Agata Nowicka</h5>
-                 </Col>
+                </Col>
             </Row>
-        </Container> 
+        </Container>
     )
 }

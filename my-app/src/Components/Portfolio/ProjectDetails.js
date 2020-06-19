@@ -8,8 +8,8 @@ export default function ProjectDetails(props) {
 
   if (showDiv) {
     return (
-      <AnimatedBorderDiv>
-        <div className='projectDetailsDiv'>
+      <AnimatedBorderDiv >
+        <div className='projectDetailsDiv' >
           <h1 className='projectDetailsTitle'>{props.title}</h1>
           <Button
             variant="outline-light"
@@ -22,7 +22,7 @@ export default function ProjectDetails(props) {
   }
   else {
     return (
-      <MoreInfo title={props.title} info={props.info}  live={props.live} github={props.github}/>
+      <MoreInfo title={props.title} info={props.info} live={props.live} github={props.github} />
     )
   }
 }

@@ -19,7 +19,7 @@ const LeftBorder = styled.div`
     width: 3px;
     height: 240px;
     animation: ${leftBorderTopBottom};
-    animation-duration: 0.1s;
+    animation-duration: 10s;
     background-color: #ffa41b;
     position: absolute;
     backface-visibility: hidden;
@@ -34,7 +34,7 @@ const RightBorder = styled.div`
     width: 3px;
     height: 100%;
     animation: ${rightBorderTopBottom};
-    animation-duration: 0.1s;
+    animation-duration: 10s;
     background-color:#ffa41b;
     position: absolute;
 `
@@ -48,7 +48,7 @@ const TopBorder = styled.div`
     width: 100%;
     height: 3px;
     animation: ${topBorderTopBottom};
-    animation-duration: 0.1s;
+    animation-duration: 10s;
     background-color: #ffa41b;
     position: absolute;
     backface-visibility: hidden;
@@ -63,7 +63,7 @@ const BottomBorder = styled.div`
     width: 100%;
     height: 3px;
     animation: ${bottomBorderTopBottom};
-    animation-duration: 0.1s;
+    animation-duration: 10s;
     background-color: #ffa41b;
     position: absolute;
 `
@@ -118,7 +118,7 @@ class AnimatedBorderDiv extends React.Component {
         }
 
         return (
-            <AnimatedBorder>
+            <AnimatedBorder >
                 {this.props.children}
                 <TopBorder/>
                 <LeftBorder id="leftBorderAnimated"/>

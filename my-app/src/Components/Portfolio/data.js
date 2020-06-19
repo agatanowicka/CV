@@ -10,7 +10,7 @@ const allProjects = [{
 {
     id: 2,
     title: 'Algorytmy',
-    image: '/images/programing.jpg',
+    image: '/images/algorithms.jpg',
     info: 'Uważam, iż aby być profesjonalistą należy dobrze znać podstawy. W tym projekcie poświęciłam dużo czasu na zgłębienie podstaw informatyki, którymi są algorytmy. To właśnie dzięki nim rozwinęłam swoje informatyczne, analityczne myślenie.',
     live: '',
     github: 'https://github.com/agatanowicka/algorithms'
@@ -18,7 +18,7 @@ const allProjects = [{
 {
     id: 3,
     title: 'Sklep internetowy',
-    image: '/images/',
+    image: '/images/shop.png',
     info: 'Sklep internetowy to przykładowa aplikacja do robienia zakupów odzieżowych online. Aplikacja ta posiada zaawansowany panel administracyjny, dzięki któremu można min. dodawać, usuwać i edytować produkty znajdujące się w sklepie. Użytkownik może natomiast dodać wybrany produkt do koszyka i po zalogowaniu złożyć zamówienie. ',
     live: '',
     github: 'https://github.com/agatanowicka/shop'
@@ -26,7 +26,7 @@ const allProjects = [{
 {
     id: 4,
     title: 'Lista zadań',
-    image: '/images/',
+    image: '/images/toDoList.png',
     info: 'Lista zadań to jeden z moich pierwszych projektów. Aplikacja ta pozwala dodawać kolejne zadania do listy. Po wykonaniu zdania można je oznaczyć jako wykonane lub całkowicie usunąć z listy.',
     live: '',
     github: 'https://github.com/agatanowicka/To-Do-List'
@@ -34,7 +34,7 @@ const allProjects = [{
 {
     id: 5,
     title: 'System do blogowania',
-    image: '/images/',
+    image: '/images/blog.png',
     info: 'System blogów to aplikacja przeznaczona dla podróżników i osób lubiących podróże. Użytkownik może oglądać posty innych osób lub się zalogować (za pośrednictwem gmail’a lub po standardowej rejestracji)  i publikować własne posty na swojej tablicy.',
     live: '',
     github: 'https://github.com/agatanowicka/blog'
