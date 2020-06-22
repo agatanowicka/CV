@@ -1,994 +1,1099 @@
-  .header {
-    background-image: linear-gradient(to left, #00a8cc, #000839, black);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.header {
+  background-image: linear-gradient(to left, #00a8cc, #000839, black);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navTextItem {
+  font-weight: bold;
+  color: white;
+}
+
+.navTextFrontEnd {
+  color: #ffa41b;
+  font-weight: bold;
+}
+
+.navBrand {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: block!important;
   }
-  
-  .navTextItem {
-    font-weight: bold;
+}
+
+.rightNav.mr-auto.navbar-nav {
+  float: right;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.mainRow {
+  width: 80%;
+  height: auto;
+}
+
+.homeHeading1 {
+  padding-top: 150px;
+  font-size: 8em;
+  font-weight: bold;
+  animation-name: headin1Animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes headin1Animation {
+  0% {
     color: white;
   }
-  
-  .navTextFrontEnd {
+
+  50% {
     color: #ffa41b;
-    font-weight: bold;
   }
-  
-  .navBrand {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  100% {
+    color: white;
   }
-  
-  @media (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse {
-      display: block!important;
-    }
+}
+
+.homeHeading5 {
+  font-size: 2em;
+  color: #ffa41b;
+  font-weight: lighter;
+  padding-left: 1%;
+}
+
+.goToPortfolioBtn {
+  margin-left: 30px;
+  border: none;
+  background-image: linear-gradient(to bottom right, #ffa41b,#000839);
+  height: 50px;
+  width: 200px;
+  box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19),0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19);
+}
+
+.goToPortfolioBtn:hover {
+  background-image: linear-gradient(to bottom right, #ffa41b, #ffa41b);
+}
+
+.goToPortfolioHeading {
+  display: inline;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.goToPortfolioDiv {
+  margin-top: 60px;
+}
+
+.goToPortfolioIcon {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.aboutMeImages {
+  margin-top: -160px;
+}
+
+.imageAnimation {
+  position: relative;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.imgComputer1 {
+  position: absolute;
+  left: 20%;
+  animation-name: imageAnimateComputer1;
+  width: 70%;
+  height: 240px;
+}
+
+@keyframes imageAnimateComputer1 {
+  0% {
+    top: -20px;
   }
-  
-  .rightNav.mr-auto.navbar-nav {
-    float: right;
+
+  50% {
+    top: 0px;
   }
-  
-  .collapse:not(.show) {
-    display: none;
+
+  100% {
+    top: -20px;
   }
-  
-  .mainRow {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: auto;
-    height: auto;
+}
+
+.imgLaptop {
+  position: absolute;
+  left: 10%;
+  animation-name: imageAnimateLaptop;
+  z-index: 1;
+  width: 70%;
+  height: 200px;
+}
+
+@keyframes imageAnimateLaptop {
+  0% {
+    top: 190px;
   }
-  
+
+  50% {
+    top: 240px;
+  }
+
+  100% {
+    top: 190px;
+  }
+}
+
+.imgComputer2 {
+  position: absolute;
+  left: 50%;
+  animation-name: imageAnimateComputer2;
+  width: 60%;
+  height: 250px;
+}
+
+@keyframes imageAnimateComputer2 {
+  0% {
+    top: 110px;
+  }
+
+  50% {
+    top: 60px;
+  }
+
+  100% {
+    top: 110px;
+  }
+}
+
+.imgMouse {
+  position: absolute;
+  left: 70%;
+  animation-name: imageAnimateMouse;
+  width: 50%;
+  height: 200px;
+}
+
+@keyframes imageAnimateMouse {
+  0% {
+    top: 340px;
+  }
+
+  50% {
+    top: 320px;
+  }
+
+  100% {
+    top: 340px;
+  }
+}
+
+.imgComputer3 {
+  position: absolute;
+  left: 0%;
+  animation-name: imageAnimateComputer3;
+  width: 70%;
+  height: 320px;
+}
+
+@keyframes imageAnimateComputer3 {
+  0% {
+    top: 120px;
+  }
+
+  50% {
+    top: 100px;
+  }
+
+  100% {
+    top: 120px;
+  }
+}
+
+.imgSmartfon {
+  position: absolute;
+  left: 90%;
+  animation-name: imageAnimateSmartfon;
+  width: 15%;
+  height: 150px;
+}
+
+@keyframes imageAnimateSmartfon {
+  0% {
+    top: 200px;
+  }
+
+  50% {
+    top: 220px;
+  }
+
+  100% {
+    top: 200px;
+  }
+}
+
+.mainDiv {
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.mainHeading {
+  margin-top: 50px;
+  color: #00a8cc;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 4em;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.mainLeftBorder {
+  border-left: 5px #ffa41b solid;
+}
+
+.aboutMeParagraph {
+  color: #000839;
+  position: relative;
+  animation-name: aboutMeParAnimation;
+  animation-duration: 2s;
+  text-align: justify;
+  font-weight: bolder;
+}
+
+@keyframes aboutMeParAnimation {
+  0% {
+    opacity: 0%;
+    ; left: 0px;
+    top: -20px;
+  }
+
+  25% {
+    opacity: 25%;
+    ; left: 0px;
+    top: -15px;
+  }
+
+  50% {
+    opacity: 50%;
+    ; left: 0px;
+    top: -10px;
+  }
+
+  75% {
+    opacity: 75%;
+    ; left: 0px;
+    top: -5px;
+  }
+
+  100% {
+    opacity: 100%;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.btnGoToPortfolio {
+  box-sizing: 50px;
+  border-radius: 50%;
+  background-color: #ffa41b;
+  border: none;
+  display: inline;
+  box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19),0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19);
+  position: relative;
+  animation-name: btnGoToPortfolioAnimation;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes btnGoToPortfolioAnimation {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 100px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.btnGoToPortfolio:hover {
+  background-image: linear-gradient(to bottom right, #000839, #005082,#00a8cc);
+}
+
+.headingGoToPortfolio {
+  display: inline;
+  margin-right: 30px;
+  color: #005082;
+}
+
+.techTextDiv {
+  text-align: center;
+}
+
+.techParagraph {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+  font-size: 1.5em;
+  display: inline;
+}
+
+.techParagraphYellow {
+  color: #ffa41b;
+  display: inline;
+  font-weight: bold;
+}
+
+.techImages {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #000839;
+}
+
+.imgSubtitle {
+  font-weight: bold;
+  color: #ffa41b;
+}
+
+.techImg {
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 80px;
+  width: 45%;
+  transition: width 1s, height 3s;
+}
+
+.techImg:hover {
+  width: 55%;
+  height: 100px;
+}
+
+.portfolioRow {
+  margin-top: 40px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectDiv {
+  background-color: #000839;
+  width: 100%;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.portfolioCol {
+  height: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectDetailsDiv {
+  padding-top: 15%;
+  padding-bottom: auto;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.projectDetailsTitle {
+  color: #ffa41b;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.projectDetailsInfo {
+  color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.moreInfoDiv {
+  padding-top: 30px;
+}
+
+.moreInfoBtn {
+  margin-right: 30px;
+  margin-top: 1px;
+}
+
+.projectImage {
+  box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19),0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19);
+  display: block;
+  height: 300px;
+}
+
+.container1 {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000839;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.contactIcon {
+  color: #ffa41b;
+  font-size: 3em;
+  display: inline;
+  margin-right: 30px;
+}
+
+.contactIcon:hover {
+  color: #00a8cc;
+}
+
+.contactText {
+  color: #000839;
+  font-size: 2em;
+  display: inline;
+}
+
+.contactCol {
+  margin-top: 50px;
+  float: left;
+  margin-bottom: 80px;
+}
+
+.contactDiv {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  padding-left: 30%;
+}
+
+.footerContainer {
+  height: 130px;
+  background-color: #000839;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footerHeading {
+  margin-top: 55px;
+  color: white;
+}
+
+.videoTag {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: -200px;
+  margin-left: 0%;
+  margin-right: auto;
+  z-index: -1;
+}
+
+.backgroundToHomeImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.homeContainerBackground {
+  background: url(/images/homeBackground.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+  background-position: top;
+  margin-top: -23px;
+  padding-bottom: 100px;
+}
+
+.homeContainerBackground::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #000839;
+  opacity: 70%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.technoDiv {
+  background: url(/images/techBackground.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: auto;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+  background-position: top;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.technoDiv::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000839da;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.techItem {
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.portfolioDiv {
+  background-image: linear-gradient(to bottom, white,#005082af);
+  padding-bottom: 50px;
+}
+
+@media(min-width: 320px) and (max-width: 480px) {
   .homeHeading1 {
-    padding-top: 150px;
-    font-size: 8em;
-    font-weight: bold;
-    animation-name: headin1Animation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    font-size: 2.5em;
   }
-  
-  @keyframes headin1Animation {
-    0% {
-      color: white;
-    }
-  
-    50% {
-      color: #ffa41b;
-    }
-  
-    100% {
-      color: white;
-    }
-  }
-  
+
   .homeHeading5 {
-    font-size: 2em;
-    color: #ffa41b;
-    font-weight: lighter;
-    padding-left: 1%;
+    font-size: 1.5em;
   }
-  
-  .goToPortfolioBtn {
-    margin-left: 30px;
-    border: none;
-    background-image: linear-gradient(to bottom right, #ffa41b,#000839);
-    height: 50px;
-    width: 200px;
-    box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19),0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19);
-  }
-  
-  .goToPortfolioBtn:hover {
-    background-image: linear-gradient(to bottom right, #ffa41b, #ffa41b);
-  }
-  
+
   .goToPortfolioHeading {
-    display: inline;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
   }
-  
-  .goToPortfolioDiv {
-    margin-top: 60px;
+
+  .goToPortfolioBtn {
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 200px;
   }
-  
-  .goToPortfolioIcon {
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-  }
-  
+
   .aboutMeImages {
-    margin-top: -160px;
+    margin-top: 70px;
+    width: 90%;
   }
-  
-  .imageAnimation {
-    position: relative;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
+
+  #aboutMe {
+    height: 1350px;
   }
-  
+
+  .aboutMeParagraph {
+    font-size: 0.8em;
+  }
+  @  keyframes btnGoToPortfolioAnimation {
+    0% {
+      left: 0px;
+  }
+
+  50% {
+    left: 50px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.mainRow {
+  margin-left: 12%;
+}
+
+.mainHeading {
+  font-size: 2.3em;
+  margin-top: 0px;
+}
+
+.techParagraph {
+  font-size: 0.8em;
+}
+
+.projectDetailsInfo {
+  font-size: 0.6em;
+}
+
+.projectDetailsTitle {
+  font-size: 1em;
+}
+
+.imgComputer1 {
+  width: 80%;
+}
+
+.imgLaptop {
+  width: 70%;
+  height: 140px;
+}
+
+@keyframes imageAnimateLaptop {
+  0% {
+    top: 250px;
+  }
+
+  50% {
+    top: 270px;
+  }
+
+  100% {
+    top: 250px;
+  }
+}
+
+.imgComputer2 {
+  width: 65%;
+  height: 170px;
+}
+
+@keyframes imageAnimateComputer2 {
+  0% {
+    top: 110px;
+  }
+
+  50% {
+    top: 90px;
+  }
+
+  100% {
+    top: 110px;
+  }
+}
+
+.imgMouse {
+  width: 80%;
+  left: 40%;
+}
+
+.imgComputer3 {
+  width: 70%;
+  height: 210px;
+}
+
+@keyframes imageAnimateComputer3 {
+  0% {
+    top: 135px;
+  }
+
+  50% {
+    top: 120px;
+  }
+
+  100% {
+    top: 135px;
+  }
+}
+
+.imgSmartfon {
+  width: 20%;
+  height: 130px;
+}
+
+@keyframes imageAnimateSmartfon {
+  0% {
+    top: 215px;
+  }
+
+  50% {
+    top: 225px;
+  }
+
+  100% {
+    top: 215px;
+  }
+}
+
+.techImg {
+  height: 57px;
+  width: 27%;
+}
+
+.techImg:hover {
+  width: 33%;
+  height: 65px;
+}
+
+.techItem {
+  width: 120px;
+  height: 120px;
+}
+
+.contactText {
+  font-size: 0.9em;
+}
+
+.contactIcon {
+  font-size: 0.9em;
+}
+
+.contactDiv {
+  padding-left: 10%;
+}
+
+  }
+
+@media(min-width: 481px) and (max-width: 767px) {
+  .homeHeading1 {
+    font-size: 3.5em;
+  }
+
+  .goToPortfolioHeading {
+    font-size: 1em;
+  }
+
+  .mainRow {
+    margin-left: 12%;
+  }
+
+  .goToPortfolioBtn {
+    width: 50px;
+  }
+
   .imgComputer1 {
-    opacity: 70%;
-    position: absolute;
-    left: 20%;
-    animation-name: imageAnimateComputer1;
-    width: 70%;
-    height: 240px;
+    width: 65%;
   }
-  
-  @keyframes imageAnimateComputer1 {
-    0% {
-      top: -20px;
-    }
-  
-    50% {
-      top: 0px;
-    }
-  
-    100% {
-      top: -20px;
-    }
-  }
-  
+
   .imgLaptop {
-    position: absolute;
-    left: 10%;
-    animation-name: imageAnimateLaptop;
-    z-index: 1;
-    width: 70%;
+    width: 65%;
     height: 200px;
   }
-  
-  @keyframes imageAnimateLaptop {
-    0% {
-      top: 190px;
-    }
-  
-    50% {
-      top: 240px;
-    }
-  
-    100% {
-      top: 190px;
-    }
-  }
-  
+
   .imgComputer2 {
-    opacity: 90%;
-    position: absolute;
-    left: 50%;
-    animation-name: imageAnimateComputer2;
-    width: 60%;
-    height: 250px;
+    width: 55%;
   }
-  
-  @keyframes imageAnimateComputer2 {
-    0% {
-      top: 110px;
-    }
-  
-    50% {
-      top: 60px;
-    }
-  
-    100% {
-      top: 110px;
-    }
-  }
-  
+
   .imgMouse {
-    position: absolute;
-    left: 70%;
-    animation-name: imageAnimateMouse;
-    width: 50%;
-    height: 200px;
+    width: 40%;
+    left: 65%;
   }
-  
-  @keyframes imageAnimateMouse {
-    0% {
-      top: 340px;
-    }
-  
-    50% {
-      top: 320px;
-    }
-  
-    100% {
-      top: 340px;
-    }
-  }
-  
+
   .imgComputer3 {
-    opacity: 95%;
-    position: absolute;
-    left: 0%;
-    animation-name: imageAnimateComputer3;
-    width: 70%;
-    height: 320px;
+    width: 60%;
+    height: 280px;
   }
-  
-  @keyframes imageAnimateComputer3 {
-    0% {
-      top: 120px;
-    }
-  
-    50% {
-      top: 100px;
-    }
-  
-    100% {
-      top: 120px;
-    }
-  }
-  
+
   .imgSmartfon {
-    position: absolute;
-    left: 90%;
-    animation-name: imageAnimateSmartfon;
     width: 15%;
     height: 150px;
   }
-  
-  @keyframes imageAnimateSmartfon {
-    0% {
-      top: 200px;
-    }
-  
-    50% {
-      top: 220px;
-    }
-  
-    100% {
-      top: 200px;
-    }
+
+  #aboutMe {
+    height: 1600px;
   }
-  
-  .mainDiv {
-    padding-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+
+  .aboutMeImages {
+    margin-top: 150px;
   }
-  
+
   .mainHeading {
-    margin-top: 50px;
-    color: #00a8cc;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 4em;
-    margin-left: 20px;
-    margin-bottom: 50px;
-  }
-  
-  .mainLeftBorder {
-    border-left: 5px #ffa41b solid;
-  }
-  
-  .aboutMeParagraph {
-    color: #000839;
-    position: relative;
-    animation-name: aboutMeParAnimation;
-    animation-duration: 2s;
-    text-align: justify;
-    font-weight: bolder;
-  }
-  
-  @keyframes aboutMeParAnimation {
-    0% {
-      opacity: 0%;
-      ; left: 0px;
-      top: -20px;
-    }
-  
-    25% {
-      opacity: 25%;
-      ; left: 0px;
-      top: -15px;
-    }
-  
-    50% {
-      opacity: 50%;
-      ; left: 0px;
-      top: -10px;
-    }
-  
-    75% {
-      opacity: 75%;
-      ; left: 0px;
-      top: -5px;
-    }
-  
-    100% {
-      opacity: 100%;
-      left: 0px;
-      top: 0px;
-    }
-  }
-  
-  .btnGoToPortfolio {
-    box-sizing: 50px;
-    border-radius: 50%;
-    background-color: #ffa41b;
-    border: none;
-    display: inline;
-    box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19),0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19);
-    position: relative;
-    animation-name: btnGoToPortfolioAnimation;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes btnGoToPortfolioAnimation {
-    0% {
-      left: 0px;
-    }
-  
-    50% {
-      left: 100px;
-    }
-  
-    100% {
-      left: 0px;
-    }
-  }
-  
-  .btnGoToPortfolio:hover {
-    background-image: linear-gradient(to bottom right, #000839, #005082,#00a8cc);
-  }
-  
-  .headingGoToPortfolio {
-    display: inline;
-    margin-right: 30px;
-    color: #005082;
-  }
-  
-  .techTextDiv {
-    text-align: center;
-  }
-  
-  .techParagraph {
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: normal;
-    font-size: 1.5em;
-    display: inline;
-  }
-  
-  .techParagraphYellow {
-    color: #ffa41b;
-    display: inline;
-    font-weight: bold;
-  }
-  
-  .techImages {
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 50px;
-    color: #000839;
-  }
-  
-  .imgSubtitle {
-    font-weight: bold;
-    color: #ffa41b;
-  }
-  
-  .techImg {
-    padding-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    height: 80px;
-    width: 45%;
-    transition: width 1s, height 3s;
-  }
-  
-  .techImg:hover {
-    width: 55%;
-    height: 100px;
-  }
-  
-  .portfolioRow {
-    margin-top: 40px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .projectDiv {
-    background-color: #000839;
-    width: 100%;
-    height: 300px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  
-  .portfolioCol {
-    height: 300px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .projectDetailsDiv {
-    padding-top: 15%;
-    padding-bottom: auto;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  
-  .projectDetailsTitle {
-    color: #ffa41b;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    padding-bottom: 10px;
-  }
-  
-  .projectDetailsInfo {
-    color: white;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .moreInfoDiv {
-    padding-top: 30px;
-  }
-  
-  .moreInfoBtn {
-    margin-right: 30px;
-    margin-top: 1px;
-  }
-  
-  .projectImage {
-    box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19),0 20px 26px 0 rgba(0,0,0,0.2), 0 16px 20px 0 rgba(0,0,0,0.19);
-    display: block;
-  }
-  
-  .container1 {
-    position: relative;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #000839;
-  }
-  
-  .container1:hover .overlay {
-    opacity: 1;
-  }
-  
-  .contactIcon {
-    color: #ffa41b;
     font-size: 3em;
-    display: inline;
-    margin-right: 30px;
-    margin-left: 35%;
   }
-  
-  .contactIcon:hover {
-    color: #00a8cc;
+
+  .techParagraph {
+    font-size: 1em;
   }
-  
-  .contactText {
-    color: #000839;
-    font-size: 2em;
-    display: inline;
-  }
-  
-  .contactCol {
-    margin-top: 50px;
-    float: left;
-    margin-bottom: 80px;
-  }
-  
-  .contactDiv {
-    margin-bottom: 30px;
-  }
-  
-  .footerContainer {
-    height: 130px;
-    background-color: #000839;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .footerHeading {
-    margin-top: 55px;
-    color: white;
-  }
-  
-  .videoTag {
-    width: 180%;
-    height: 500px;
-    position: absolute;
-    top: -200px;
-    left: -35%;
-    z-index: -1;
-  }
-  
-  .backgroundToHomeImg {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-  }
-  
-  .homeContainerBackground {
-    background: url(/images/homeBackground.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    height: auto;
-    position: relative;
-    z-index: 0;
-    background-position: top;
-    margin-top: -23px;
-    padding-bottom: 100px;
-  }
-  
-  .homeContainerBackground::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #000839;
-    opacity: 70%;
-    z-index: -1;
-    left: 0;
-    top: 0;
-  }
-  
-  .technoDiv {
-    background: url(/images/techBackground.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    height: auto;
-    padding-bottom: 100px;
-    position: relative;
-    z-index: 0;
-    background-position: top;
-    margin-top: 100px;
-    margin-bottom: 30px;
-  }
-  
-  .technoDiv::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #000839;
-    opacity: 80%;
-    z-index: -1;
-    left: 0;
-    top: 0;
-  }
-  
+
   .techItem {
+    width: 150px;
+    height: 150px;
+  }
+
+  .projectDetailsInfo {
+    font-size: 0.8em;
+  }
+
+  .projectDetailsTitle {
+    font-size: 1.5em;
+  }
+
+  .contactText {
+    font-size: 1.3em;
+  }
+
+  .contactIcon {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .homeHeading1 {
+    font-size: 3.8em;
+  }
+
+  .mainRow {
+    margin-left: 12%;
+  }
+
+  .homeHeading5 {
+    font-size: 2.3em;
+  }
+
+  .goToPortfolioHeading {
+    font-size: 1.5em;
+  }
+
+  .goToPortfolioBtn {
+    width: 50px;
+  }
+
+  .aboutMeImages {
+    margin-top: 60px;
+  }
+
+  #aboutMe {
+    height: 1300px;
+  }
+
+  .projectDetailsInfo {
+    font-size: 0.9em;
+  }
+
+  .projectDetailsTitle {
+    font-size: 1.5em;
+  }
+
+  .imgComputer1 {
+    width: 50%;
+  }
+
+  .imgLaptop {
+    width: 60%;
+  }
+
+  .imgComputer2 {
+    width: 50%;
+  }
+
+  .imgMouse {
+    width: 40%;
+    left: 65%;
+  }
+
+  .imgComputer3 {
+    width: 60%;
+    height: 320px;
+  }
+
+  .imgSmartfon {
+    width: 10%;
+    height: 150px;
+  }
+
+  .techItem {
+    width: 150px;
+    height: 150px;
+  }
+
+  .techImg {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .homeHeading1 {
+    font-size: 5.3em;
+  }
+
+  .mainRow {
+    margin-left: 12%;
+  }
+
+  .homeHeading5 {
+    font-size: 2.3em;
+  }
+
+  .goToPortfolioHeading {
+    font-size: 1.5em;
+  }
+
+  .goToPortfolioBtn {
+    width: 150px;
+  }
+
+  .projectDetailsInfo {
+    font-size: 0.8em;
+  }
+
+  .projectDetailsTitle {
+    font-size: 2em;
+  }
+
+  .aboutImages {
+    margin-top: 50px;
+  }
+
+  #aboutMe {
+    height: 1200px;
+  }
+
+  .aboutMeImages {
+    margin-top: 50px;
+  }
+
+  .imgComputer1 {
+    width: 50%;
+  }
+
+  .imgLaptop {
+    width: 50%;
+  }
+
+  .imgComputer2 {
+    width: 40%;
+  }
+
+  .imgMouse {
+    width: 35%;
+    left: 55%;
+  }
+
+  .imgComputer3 {
+    width: 55%;
+    height: 280px;
+  }
+
+  .imgSmartfon {
+    width: 10%;
+    height: 150px;
+    left: 75%;
+  }
+
+  .techItem {
+    width: 150px;
+    height: 150px;
+  }
+
+  .techImg {
+    margin-top: 5px;
+  }
+
+  .techImg {
+    width: 35%;
+  }
+
+  .techImg:hover {
+    width: 45%;
+    height: 90px;
+  }
+}
+
+@media(min-width: 1281px) {
+  .homeHeading1 {
+    font-size: 5em;
+  }
+
+  .content {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
     background-color: white;
-    border-radius: 50%;
-    margin-bottom: 20px;
   }
-  
-  .portfolioDiv {
-    background-image: linear-gradient(to bottom, white,#005082af);
-    padding-bottom: 50px;
+
+  .projectDetailsTitle {
+    font-size: 2em;
   }
-  
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    .homeHeading1 {
-      font-size: 3em;
-    }
-  
-    .homeHeading5 {
-      font-size: 2em;
-    }
-  
-    .goToPortfolioHeading {
-      font-size: 1em;
-    }
-  
-    .goToPortfolioBtn {
-      width: 50px;
-    }
-  
-    .aboutMeImages {
-      margin-top: 70px;
-      width: 90%;
-    }
-  
-    #aboutMe {
-      height: 1450px;
-    }
-  
-    .mainHeading {
-      font-size: 3em;
-    }
-  
-    .techParagraph {
-      font-size: 1em;
-    }
-  
-    .projectDetailsInfo {
-      font-size: 0.8em;
-    }
-  
-    .projectDetailsTitle {
-      font-size: 2em;
-    }
-  
-    .imgComputer1 {
-      width: 80%;
-    }
-  
-    .imgLaptop {
-      width: 70%;
-      height: 170px;
-    }
-  
-    .imgComputer2 {
-      width: 65%;
-      height: 200px;
-    }
-  
-    .imgMouse {
-      width: 50%;
-      left: 70%;
-    }
-  
-    .imgComputer3 {
-      width: 70%;
-      height: 280px;
-    }
-  
-    .imgSmartfon {
-      width: 20%;
-      height: 130px;
-    }
-  
-    .techItem {
-      width: 150px;
-      height: 150px;
-    }
+
+  .projectDetailsInfo {
+    font-size: 0.8em;
   }
-  
-  @media screen and (min-width: 550px) and (max-width: 767px) {
-    .imgComputer1 {
-      width: 65%;
-    }
-  
-    .imgLaptop {
-      width: 65%;
-      height: 200px;
-    }
-  
-    .imgComputer2 {
-      width: 55%;
-    }
-  
-    .imgMouse {
-      width: 40%;
-      left: 65%;
-    }
-  
-    .imgComputer3 {
-      width: 60%;
-      height: 280px;
-    }
-  
-    .imgSmartfon {
-      width: 15%;
-      height: 150px;
-    }
-  
-    #aboutMe {
-      height: 1350px;
-    }
-  
-    .techItem {
-      width: 150px;
-      height: 150px;
-    }
+
+  .imgComputer1 {
+    width: 50%;
   }
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .homeHeading1 {
-      font-size: 4em;
-    }
-  
-    .homeHeading5 {
-      font-size: 2.3em;
-    }
-  
-    .goToPortfolioHeading {
-      font-size: 1.5em;
-    }
-  
-    .goToPortfolioBtn {
-      width: 50px;
-    }
-  
-    .aboutMeImages {
-      margin-top: 60px;
-    }
-  
-    #aboutMe {
-      height: 1200px;
-    }
-  
-    .projectDetailsInfo {
-      font-size: 0.8em;
-    }
-  
-    .projectDetailsTitle {
-      font-size: 1.5em;
-    }
-  
-    .imgComputer1 {
-      width: 50%;
-    }
-  
-    .imgLaptop {
-      width: 60%;
-    }
-  
-    .imgComputer2 {
-      width: 50%;
-    }
-  
-    .imgMouse {
-      width: 40%;
-      left: 65%;
-    }
-  
-    .imgComputer3 {
-      width: 60%;
-      height: 320px;
-    }
-  
-    .imgSmartfon {
-      width: 10%;
-      height: 150px;
-    }
-  
-    .techItem {
-      width: 150px;
-      height: 150px;
-    }
-  
-    .techImg {
-      margin-top: 20px;
-    }
+
+  .imgLaptop {
+    width: 60%;
+    height: 250px;
   }
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .homeHeading1 {
-      font-size: 5.3em;
-    }
-  
-    .homeHeading5 {
-      font-size: 2.3em;
-    }
-  
-    .goToPortfolioHeading {
-      font-size: 1.5em;
-    }
-  
-    .goToPortfolioBtn {
-      width: 150px;
-    }
-  
-    .projectDetailsInfo {
-      font-size: 0.8em;
-    }
-  
-    .projectDetailsTitle {
-      font-size: 2em;
-    }
-  
-    .mainRow {
-      margin-left: 20%;
-    }
-  
-    .aboutImages {
-      margin-top: 50px;
-    }
-  
-    #aboutMe {
-      height: 1200px;
-    }
-    .aboutMeImages{
-      margin-top: 50px;
-    }
-  
-    .imgComputer1 {
-      width: 50%;
-    }
-  
-    .imgLaptop {
-      width: 50%;
-    }
-  
-    .imgComputer2 {
-      width: 40%;
-    }
-  
-    .imgMouse {
-      width: 35%;
-      left: 55%;
-    }
-  
-    .imgComputer3 {
-      width: 55%;
-      height: 280px;
-    }
-  
-    .imgSmartfon {
-      width: 10%;
-      height: 150px;
-      left: 75%;
-    }
-  
-    .techItem {
-      width: 150px;
-      height: 150px;
-    }
-  
-    .techImg {
-      margin-top: 5px;
-    }
-  
-    .techImg {
-      width: 35%;
-    }
-  
-    .techImg:hover {
-      width: 45%;
-      height: 90px;
-    }
+
+  .imgComputer2 {
+    width: 50%;
+    height: 300px;
   }
-  
-  @media screen and (min-width: 1281px) {
-    .content {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    body {
-      background-color: white;
-    }
-  
-    .projectDetailsInfo {
-      font-size: 0.8em;
-    }
-  
-    .videoTag {
-      width: 250%;
-      height: 700px;
-      left: -80%;
-      top: -350px;
-    }
-  
-    .mainRow {
-      margin-left: 20%;
-    }
-  
-    .imgComputer1 {
-      width: 50%;
-    }
-  
-    .imgLaptop {
-      width: 60%;
-      height: 250px;
-    }
-  
-    .imgComputer2 {
-      width: 50%;
-      height: 300px;
-    }
-  
-    .imgMouse {
-      width: 50%;
-      left: 65%;
-    }
-  
-    .imgComputer3 {
-      width: 60%;
-      height: 350px;
-    }
-  
-    .imgSmartfon {
-      width: 10%;
-      height: 150px;
-    }
-  
-    .aboutMeImages {
-      margin-top: -80px;
-    }
-  
-    #aboutMe {
-      height: 800px;
-    }
-  
-    .techItem {
-      width: 160px;
-      height: 160px;
-    }
-  
-    .techImg {
-      margin-top: 5px;
-    }
-  
-    .techImg {
-      width: 35%;
-      height: 90px;
-    }
-  
-    .techImg:hover {
-      width: 45%;
-      height: 100px;
-    }
+
+  .imgMouse {
+    width: 50%;
+    left: 65%;
   }
-  
-  @media (min-width: 1281px) and (max-width: 1450px) {
-    .homeHeading1 {
-      font-size: 6em;
-    }
-  
-    .projectDetailsTitle {
-      font-size: 1.8em;
-    }
-  
-    .projectDetailsInfo {
-      font-size: 0.9em;
-    }
-  
-    .videoTag {
-      width: 200%;
-      height: 600px;
-      left: -40%;
-      top: -280px;
-    }
-  
-    .techItem {
-      width: 140px;
-      height: 140px;
-    }
-  
-    .techImg {
-      margin-top: 5px;
-    }
-  
-    .techImg {
-      width: 30%;
-      height: 70px;
-    }
-  
-    .techImg:hover {
-      width: 45%;
-      height: 80px;
-    }
-  
-    .container1 {
-      width: 90%;
-    }
+
+  .imgComputer3 {
+    width: 60%;
+    height: 350px;
   }
+
+  .imgSmartfon {
+    width: 10%;
+    height: 150px;
+  }
+
+  .aboutMeImages {
+    margin-top: -80px;
+  }
+
+  #aboutMe {
+    height: 900px;
+  }
+
+  .techItem {
+    width: 130px;
+    height: 130px;
+  }
+
+  .techImg {
+    margin-top: 5px;
+  }
+
+  .techImg {
+    width: 30%;
+    height: 65px;
+  }
+
+  .techImg:hover {
+    width: 35%;
+    height: 73px;
+  }
+}
   
+ 

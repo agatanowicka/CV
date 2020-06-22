@@ -20,7 +20,7 @@ const allProjects = [{
     title: 'Sklep internetowy',
     image: '/images/shop.png',
     info: 'Sklep internetowy to przykładowa aplikacja do robienia zakupów odzieżowych online. Aplikacja ta posiada zaawansowany panel administracyjny, dzięki któremu można min. dodawać, usuwać i edytować produkty znajdujące się w sklepie. Użytkownik może natomiast dodać wybrany produkt do koszyka i po zalogowaniu złożyć zamówienie. ',
-    live: '',
+    live: 'http://nowickaagata.online/',
     github: 'https://github.com/agatanowicka/shop'
 },
 {
@@ -28,7 +28,7 @@ const allProjects = [{
     title: 'Lista zadań',
     image: '/images/toDoList.png',
     info: 'Lista zadań to jeden z moich pierwszych projektów. Aplikacja ta pozwala dodawać kolejne zadania do listy. Po wykonaniu zdania można je oznaczyć jako wykonane lub całkowicie usunąć z listy.',
-    live: '',
+    live: 'http://nowickaagata.website/',
     github: 'https://github.com/agatanowicka/To-Do-List'
 },
 {
@@ -36,7 +36,7 @@ const allProjects = [{
     title: 'System do blogowania',
     image: '/images/blog.png',
     info: 'System blogów to aplikacja przeznaczona dla podróżników i osób lubiących podróże. Użytkownik może oglądać posty innych osób lub się zalogować (za pośrednictwem gmail’a lub po standardowej rejestracji)  i publikować własne posty na swojej tablicy.',
-    live: '',
+    live: 'http://nowickaagata.eu/',
     github: 'https://github.com/agatanowicka/blog'
 },
 {
@@ -44,7 +44,7 @@ const allProjects = [{
     title: 'Kalkulator walut',
     image: '/images/currencyChange.PNG',
     info: 'Kalkulator walut to prosta aplikacja konsumująca APi. Użytkownik po wpisaniu ilości pieniędzy, którą chce wymienić i wybraniu interesujących go walut dostaje obliczoną wartość pieniędzy po przewalutowaniu. Dodatkowo aplikacja wyświetla wykres obrazujący kurs wybranej waluty w przeciągu roku.',
-    live: '',
+    live: 'http://nowickaagata.pl/currency',
     github: 'https://github.com/agatanowicka/-Currency-Calculator'
 },
 ]

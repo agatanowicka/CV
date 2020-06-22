@@ -14,12 +14,12 @@ export default function Contact() {
                 </Row>
                 <Row >
                     <Col className='contactCol'>
+                    <video className='videoTag' autoPlay loop muted> <source src="/images/fluid.mp4" type="video/mp4" /></video>
                         <div className='contactDiv'>
                             <MdEmail className='contactIcon' />
                             <h3 className='contactText'>agata.nowicka1996@wp.pl</h3>
                         </div>
                         <div className='contactDiv'>
-                            <video className='videoTag' autoPlay loop muted> <source src="/images/fluid.mp4" type="video/mp4" /></video>
                             <FaPhone className='contactIcon' />
                             <h3 className='contactText'>609586850</h3>
                         </div>
