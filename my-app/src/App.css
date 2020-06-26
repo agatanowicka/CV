@@ -622,7 +622,7 @@
   .aboutMeParagraph {
     font-size: 0.8em;
   }
-  @  keyframes btnGoToPortfolioAnimation {
+  @keyframes btnGoToPortfolioAnimation {
     0% {
       left: 0px;
   }

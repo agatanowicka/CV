@@ -19,10 +19,6 @@ export default function Contact() {
                             <MdEmail className='contactIcon' />
                             <h3 className='contactText'>agata.nowicka1996@wp.pl</h3>
                         </div>
-                        <div className='contactDiv'>
-                            <FaPhone className='contactIcon' />
-                            <h3 className='contactText'>609586850</h3>
-                        </div>
                     </Col>
                 </Row>
             </Container>
